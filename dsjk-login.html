@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文化大数据库</title>
+<link href="css/dsjk.css" rel="stylesheet" type="text/css" />
+<style>
+	* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+
+.footer1, .push {
+	height: 100px; /* .push 要跟 .footer 的高度一样  */
+	margin-top: 183px;
+}
+
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+<div class="top">
+	<div class="top1">
+    <div class="logo"><a href="#"><img src="images/sjk/logo.png" width="258" height="140" /></a></div>
+    </div>
+</div>
+
+<div class="all">
+	<div class="login-left"></div>
+ 	 <div class="login-right">
+    	<div class="login-text">
+    	  <input type="text" name="textfield" id="userName" class="text01" value="test000" />
+      </div>
+    	<div class="login-text01">
+    	  <input type="password" name="textfield" id="userPsd" class="text01" value="11111111"/>
+      </div>
+   	  <div class="clr"></div>
+      <div class="login-botton">
+          <input type="button" name="button" id="LoginBtn" value=""  class="btn dsjkLoginBtn" onclick="openUrl()"/>
+      </div>
+  </div>
+</div>
+
+ <div class="push">
+     </div>
+</div>
+<div class="clr"></div>
+<div class="footer1" >
+	© 2005－2015 Shanxi Yunpingtai.com, All Rights Reserved    |   关于我们   |   网站邮箱   |   网站地图   |  友情链接  |  本网声明  |  
+</div>
+<script type="text/javascript" src="js/cookie.js" ></script>
+<script>
+	function openUrl(){
+		var name=document.getElementById("userName");
+		setCookie("name",name.value);
+		var val=getCookie("name");
+		window.location.href="dsjk-index.html";
+	}
+</script>
+</body>
+</html>

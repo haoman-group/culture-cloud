@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>文化产业服务平台</title>
+
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="css/dialog.css" />
+
+</head>
+
+<body>
+<div class="wrap">
+<div class="header">
+<div class="top">
+<div class="topone"><a href="cy.html"><img src="images/logo3.png"  /></a>
+</div>
+<div class="ssb">
+  <input type="text" value="" size="" /><div class="ssba"><span><a href="#">搜索</a></span></div>
+</div>
+</div>
+
+  <div class="top11">
+<ul>
+<li class="topmenu"><a href="cy.html" class="curMenu">所有商品分类</a></li>
+<li class="topmenu-home"><a href="cy.html">首页</a></li>
+<li><a href="cy-ggfw.html" class="active">公共服务</a></li>
+<li><a href="#">供求</a></li>
+<li><a href="#">优惠劵</a></li>
+<li><a href="#">团购</a></li>
+<li><a href="#">抢购</a></li>
+<li style="border:none"><a href="#">积分商城</a></li>
+</ul> 
+
+</div></div>
+<div class="clr"></div>
+<div style="font-size: 14px;">&nbsp;&nbsp;<img src="images/icon-home.png">&nbsp;&nbsp;<a style="color:black" href="cy.html">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="cy-ggfw.html" style="color:black">公共服务</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="cy-xq.html" style="color:black">戏曲</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color:black">晋剧《蝴蝶杯》太原站</a></div>
+<div >
+<hr style="width: 1300px;border-color: #DE3339;margin: 10px 0px;" />
+<div>
+<img src="images/gp.png" usemap="#Map" style="width:1300px" border="0"/>
+<map name="Map" id="Map">
+  <area shape="rect" coords="757,369,1022,425" href="javascript:showBg();" />
+</map>
+</div>
+
+
+
+
+</div>
+<div class="clr"></div>
+<div class="foot">© 2005－2015 Shanxi Yunpingtai.com, All Rights Reserved    |   <a href="#">关于我们</a>   |   <a href="#">网站邮箱</a>   |   <a href="#">网站地图</a>   |  <a href="#">友情链接</a>  |  <a href="#">本网声明</a>  | </div>
+</div>
+
+
+
+
+
+
+  <div id="fullbg"></div> 
+<div id="dialog"> 
+<p>您好，当前已选择山西大剧院&nbsp;&nbsp;&nbsp;&nbsp;2016-04-25 周一19:30&nbsp;&nbsp;&nbsp;&nbsp;票价580</p> 
+<div style="width: 700px;margin: auto;padding: 10px;"><img src="images/xuanzuo.png" style="width: 100%;"></div>
+<table cellspacing="50px"><tr>
+	<td align="right"><a href="cy-pay.html" id="post">提交订单</a></td>
+	<td><a id="cancel" href="#" onclick="closeBg();">取消</a></td>
+</tr></table>
+</div> 
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script>
+	//显示灰色 jQuery 遮罩层 
+function showBg() { 
+var bh = $("body").height(); 
+var bw = $("body").width(); 
+$("#fullbg").css({ 
+height:bh, 
+width:bw, 
+display:"block" 
+}); 
+$("#dialog").show(); 
+} 
+//关闭灰色 jQuery 遮罩 
+function closeBg() { 
+$("#fullbg,#dialog").hide(); 
+} 
+</script>
+
+
+</body>
+
+</html>

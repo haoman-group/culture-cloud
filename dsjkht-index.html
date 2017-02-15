@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>文化大数据库</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" />
+		<link href="css/dsjk.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/htFooter.css" />
+		<link rel="stylesheet" href="css/table.css" />
+		<link rel="stylesheet" href="css/metismenu.min.css" />
+		<style>
+.table{
+	display: none;
+}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="top" style="background:none;height:100px;background-color: #0F4F7D;width: 100%;margin: auto;">
+				<div style="font-size: 40px;color:white;height: 100px;line-height: 100px;padding-left: 50px;" class="pull-left">
+					文化大数据库管理系统
+				</div>
+				<div class="pull-right" style="color: white;padding-top: 60px;padding-right: 20px;">
+					<i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;您好，<span class="userName" style="color:#E46B20">Adimin</span> 所在地区：太原市-迎泽区 <a class="outHt" href="dsjk-index.html">[退出]</a>
+				</div>
+			</div>
+			<div class="all" style="width: 100%;">
+				<div class="left-c" style="background: none;background-color:#0F4F7D;margin-top:0px;width:15%">
+					<img style="width:100%" src="images/sjk/dsjkHt-menu.png" />
+					<aside class="sidebar">
+						<nav class="sidebar-nav">
+							<ul id="menu3">
+								<li class="active choose">
+									<a href="dsjkht-index.html" class="sidebarT">待办事项<span class="glyphicon arrow"></span></a>
+								</li>
+								<li>
+									<a href="#" class="sidebarT">资源采集<span class="glyphicon arrow"></span></a>
+									<ul>
+										<li class="subLi test001"><a href="dsjkht-zycjWhysList.html">文化艺术</a></li>
+										<li class="subLi test002 test003"><a href="#">公共文化<span class="glyphicon arrow"></span></a>
+											<ul>
+												<li class="subLi test002"><a href="dsjkht-zycjTsgList.html">图书馆</a></li>
+												<li class="subLi test003"><a href="dsjkht-zycjQygList.html">群艺馆</a></li>
+											</ul>
+										</li>
+										<li class="subLi test004"><a href="#">非物质文化遗产</a></li>
+										<li class="subLi test005"><a href="#">文化产业</a></li>
+										<li class="subLi test006"><a href="#">文化政策</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="sidebarT">资源检索<span class="glyphicon arrow"></span></a>
+									<ul>
+										<li class="subLi test001"><a href="dsjkht-zyjs.html">文化艺术</a></li>
+										<li class="subLi test002 test003"><a href="#">公共文化<span class="glyphicon arrow"></span></a>
+											<ul>
+												<li class="subLi test002"><a href="dsjkht-zyjsTsg.html">图书馆</a></li>
+												<li class="subLi test003"><a href="dsjkht-zyjsQyg.html">群艺馆</a></li>
+											</ul>
+										</li>
+										<li class="subLi test004"><a href="#">非物质文化遗产</a></li>
+										<li class="subLi test005"><a href="#">文化产业</a></li>
+										<li class="subLi test006"><a href="#">文化政策</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="dsjkht-zytj.html" class="sidebarT">资源统计<span class="glyphicon arrow"></span></a>
+								</li>
+								<li>
+									<a href="#" class="sidebarT">资源分析<span class="glyphicon arrow"></span></a>
+									<ul>
+										<li><a href="dsjkht-zyfx.html">点击量</a></li>
+										<li><a href="dsjkht-zyfx2.html">下载量</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+				</div>
+				<div class="right-c" style="width:85%;margin-top: 0px;">
+					<!--<img  src="images/sjk/htRight1.png" style="width:100%"/>-->
+					<div class="right-T">
+						<div class="sjkNav"><span class="sjkNavA">我的待办</span></div>
+					</div>
+					<div style="padding: 15px;">
+						<div class="col-md-2 form-group">
+							<select class="form-control" id="select" onchange="change()">
+    		  	<option value="0">图书馆</option>
+    		  	<option value="1">群艺馆</option>
+    		  </select>
+						</div>
+						<div class="clearfix"></div>
+						<table class="table" style="display: table;">
+							<thead>
+								<th>序号</th>
+								<th>名称</th>
+								<th>地址</th>
+								<th>占地面积（平方米）</th>
+								<th>总藏量（万册、件）</th>
+								<th>官方网站</th>
+								<th>联系电话</th>
+								<th>操作</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>01</td>
+									<td>应县图书馆</td>
+									<td>应县金城西街6号</td>
+									<td>3279</td>
+									<td>10</td>
+									<td></td>
+									<td>15534945582</td>
+									<td><a href="dsjkht-Check.html">审核</a></td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>太原市图书馆</td>
+									<td>太原市海子边儿童公园内</td>
+									<td>1540</td>
+									<td>200</td>
+									<td>http://tylib.org/</td>
+									<td>0351-6162829</td>
+									<td><a>审核</a></td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>山西省图书馆</td>
+									<td>太原市汾河西畔的长风商务区</td>
+									<td>5万</td>
+									<td>700</td>
+									<td>http://lib.sx.cn/</td>
+									<td>0351-4047567</td>
+									<td><a>审核</a></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="9"><img src="images/sjk/tbFoot.png"></td>
+								</tr>
+							</tfoot>
+						</table>
+						<table class="table ">
+							<thead>
+								<th>序号</th>
+								<th>名称</th>
+								<th>地址</th>
+								<th>馆舍建筑面积（平方米）</th>
+								<th>法人代表</th>
+								<th>官方网站</th>
+								<th>联系电话</th>
+								<th>操作</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>01</td>
+									<td>山西省群众艺术馆</td>
+									<td>山西省太原市侯家巷20号</td>
+									<td>7847.64</td>
+									<td></td>
+									<td>http://www.sxsqyg.cn/</td>
+									<td>0351-2023115</td>
+									<td><a href="dsjkht-CheckQyg.html">审核</a></td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>太原市群众艺术馆</td>
+									<td>太原市万柏林区西矿街68号</td>
+									<td>4570</td>
+									<td></td>
+									<td>http://www.tysqzysg.com/index.html</td>
+									<td>0351-6041847</td>
+									<td><a>审核</a></td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>山西省群众艺术馆</td>
+									<td>山西省太原市侯家巷20号</td>
+									<td>7847.64</td>
+									<td></td>
+									<td>http://www.sxsqyg.cn/</td>
+									<td>0351-2023115</td>
+									<td><a>审核</a></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="9"><img src="images/sjk/tbFoot.png"></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="push">
+			</div>
+		</div>
+		<div class="clr"></div>
+		<div class="footer" style="background:#E5E5E5;width:100%;color:#434343;height:40px;line-height:40px;font-size: 14px;">
+			技术支持：山西晋能信工
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/dsjkHt.js" ></script>
+		<script type="text/javascript" src="js/metismenu.js"></script>
+		
+		<script>
+			$(function() {
+
+				$('#menu3').metisMenu({
+					doubleTapToGo: true
+				});
+			});
+			var sel=document.getElementById("select");
+			var tab=document.getElementsByClassName("table")
+			function change(){
+				for(var i=0;i<tab.length;i++){
+					if(i==sel.value){
+						tab[i].style.display="table"
+					}
+					else{
+						tab[i].style.display="none"
+					}
+				}
+			}
+			
+			
+		</script>
+	</body>
+
+</html>

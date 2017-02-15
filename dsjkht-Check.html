@@ -1,0 +1,1419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文化大数据库</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" />
+<link rel="stylesheet" href="dist/css/pignose.tab.min.css" />
+<link href="css/dsjk.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/htFooter.css" />
+<link rel="stylesheet" href="css/table.css" />
+<link rel="stylesheet" href="css/metismenu.min.css" />
+
+<style>
+.tab ul li {
+				width: 16.66%;
+			}
+			
+			.pignose-tab-wrapper .pignose-tab-btn {
+				border-right-width: 1px;
+				border-left-width: 0px;
+			}
+			
+			.pignose-tab-wrapper .pignose-tab-group {
+				border-left: 1px solid #dfdfdf;
+				width: 99.96%;
+			}
+			
+			.pignose-tab-wrapper .pignose-tab-container {
+				top: 88px;
+				overflow: auto;
+			}			
+		
+			 .table th{
+            white-space: nowrap;
+            padding:10px 15px !important;
+            text-align: center;
+        }
+        .table td{
+        	
+        	
+            height: 30px;
+            text-align: center;
+            vertical-align: middle !important;
+        }
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="top" style="background:none;height:100px;background-color: #0F4F7D;width: 100%;margin: auto;">
+<div style="font-size: 40px;color:white;height: 100px;line-height: 100px;padding-left: 50px;" class="pull-left">
+	文化大数据库管理系统
+</div>
+<div class="pull-right" style="color: white;padding-top: 60px;padding-right: 20px;">
+	<i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;您好，<span class="userName" style="color:#E46B20">Adimin</span> 所在地区：太原市-迎泽区 <a class="outHt" href="dsjk-index.html">[退出]</a>
+</div>
+</div>
+<div class="all" style="width: 100%;">
+	<div class="left-c" style="background: none;background-color:#0F4F7D;margin-top:0px;width:15%">
+		<img style="width:100%" src="images/sjk/dsjkHt-menu.png" />
+	<aside class="sidebar">
+						<nav class="sidebar-nav">
+							<ul id="menu3">
+								<li class="active choose">
+									<a href="dsjkht-index.html" class="sidebarT">待办事项<span class="glyphicon arrow"></span></a>
+								</li>
+								<li>
+									<a href="#" class="sidebarT">资源采集<span class="glyphicon arrow"></span></a>
+									<ul>
+										<li class="subLi test001"><a href="dsjkht-zycjWhysList.html">文化艺术</a></li>
+										<li class="subLi test002 test003"><a href="#">公共文化<span class="glyphicon arrow"></span></a>
+											<ul>
+												<li class="subLi test002"><a href="dsjkht-zycjTsgList.html">图书馆</a></li>
+												<li class="subLi test003"><a href="dsjkht-zycjQygList.html">群艺馆</a></li>
+											</ul>
+										</li>
+										<li class="subLi test004"><a href="#">非物质文化遗产</a></li>
+										<li class="subLi test005"><a href="#">文化产业</a></li>
+										<li class="subLi test006"><a href="#">文化政策</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="sidebarT">资源检索<span class="glyphicon arrow"></span></a>
+									<ul>
+										<li class="subLi test001"><a href="dsjkht-zyjs.html">文化艺术</a></li>
+										<li class="subLi test002 test003"><a href="#">公共文化<span class="glyphicon arrow"></span></a>
+											<ul>
+												<li class="subLi test002"><a href="dsjkht-zyjsTsg.html">图书馆</a></li>
+												<li class="subLi test003"><a href="dsjkht-zyjsQyg.html">群艺馆</a></li>
+											</ul>
+										</li>
+										<li class="subLi test004"><a href="#">非物质文化遗产</a></li>
+										<li class="subLi test005"><a href="#">文化产业</a></li>
+										<li class="subLi test006"><a href="#">文化政策</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="dsjkht-zytj.html" class="sidebarT">资源统计<span class="glyphicon arrow"></span></a>
+								</li>
+								<li>
+									<a href="#" class="sidebarT">资源分析<span class="glyphicon arrow"></span></a>
+									<ul>
+										<li><a href="dsjkht-zyfx.html">点击量</a></li>
+										<li><a href="dsjkht-zyfx2.html">下载量</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+	</div>
+  <div class="right-c" style="width:85%;margin-top: 0px;">
+    	<!--<img  src="images/sjk/htRight1.png" style="width:100%"/>-->
+    	<div class="right-T">
+						<div class="sjkNav"><span class="sjkNavA">我的待办</span><span class="sjkNavA active">审核<a class="sjkNavClose" href="dsjkht-index.html">x</a></span></div>
+					</div>
+    	<div style="padding: 15px;">
+    		<div class="tab">
+							<ul>
+								<li>
+									<a href="#">图书馆基本概况</a>
+									<div>
+										<form class="form-horizontal">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm1" class="control-label col-md-3">名称</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm1" value="应县图书馆">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm2" class="control-label col-md-3">地址</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm2" value="应县金城西街6号">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm3" class="control-label col-md-3">法人代表</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm3" value="牛强">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm7" class="control-label col-md-3">联系电话</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm7" value="15534945582">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm4" class="control-label col-md-3">馆舍建筑面积</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm4" value="4000平方米">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm5" class="control-label col-md-3">占地面积</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm5" value="3279平方米">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm6" class="control-label col-md-3">书库面积</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm6" value="500平方米">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm8" class="control-label col-md-3">阅览室面积</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm8" value="1700平方米">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm9" class="control-label col-md-3">阅览坐席数</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm9" value="340">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm10" class="control-label col-md-3">少儿阅览坐席数</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm10" value="50">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm11" class="control-label col-md-3">报告厅面积</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm11" value="330平方米">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm12" class="control-label col-md-3">报告厅坐席数</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm12" value="180">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm13" class="control-label col-md-3">电子阅览室面积</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm13" value="150平方米">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm14" class="control-label col-md-3">电子阅览室坐席数</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm14" value="45">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm15" class="control-label col-md-3">计算机总数</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm15" value="40">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm16" class="control-label col-md-3">供读者使用的计算机数量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm16" value="25">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">读者服务区是否提供无线网络覆盖</label>
+													<div class="col-md-4">
+														<label class="radio-inline"><input type="radio" name="inlineRadioOptions"  value="1" checked="checked">是</label>
+														<label class="radio-inline"><input type="radio" name="inlineRadioOptions"  value="2">否</label>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm17" class="control-label col-md-3">计算机信息节点</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm17" value="40">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm18" class="control-label col-md-3">宽带接入</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm18" value="10">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（Mbps）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm19" class="control-label col-md-3">存储容量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm19" value="2">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（TB）</p>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</li>
+								<li>
+									<a href="#">图书报刊资源配置情况</a>
+									<div>
+										<form class="form-horizontal">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">总藏量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="10">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（万册、件）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">电子文献藏量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="150">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（种）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">电子图书藏量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（种）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">电子期刊藏量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（种）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">图书年入藏量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="0.2">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（万种）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">报刊年入藏量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="100">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（种）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">试听文献年入藏量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（种）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">数字资源总量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（TB）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">自建数字资源总量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value=""> 
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（TB）</p>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</li>
+								<li>
+									<a href="#">经费投入情况</a>
+									<div>
+										<table class="table">
+											<thead>
+												<th>序号</th>
+												<th>政府拨款总额（万元）</th>
+												<th>新增藏量购置费（万元）</th>
+												<th>免费开放本地经费（万元）</th>
+												<th>电子资源购置费</th>
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>10（中央补助地方资金）</td>
+													<td></td>
+													<td>10</td>
+													<td>3万元</td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>10（地方财政配套资金）</td>
+													<td>0</td>
+													<td>10</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">图书馆人才队伍建设情况</a>
+									<div style="overflow: auto;">
+										<table class="table table-bordered table1" >
+											<thead>
+												<th>序号</th>
+												<th>姓名</th>
+												<th>性别</th>
+												<th>民族</th>
+												<th>出生日期</th>
+												<th>政治面貌</th>
+												<th>入党时间</th>
+												<th>毕业院校</th>
+												<th>毕业时间</th>
+												<th>所学专业</th>
+												<th>学历</th>
+												<th>学位</th>
+												<th>职称（中/高级）</th>
+												<th>岗位培训学时</th>
+												<th>获奖情况</th>
+												<th>是否业务人员</th>
+												<th>人员身份</th>
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>牛强</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1968.08.13</td>
+													<td>中共党员</td>
+													<td>1996.05</td>
+													<td>雁北师院</td>
+													<td>1991.07</td>
+													<td>汉语言</td>
+													<td>大专</td>
+													<td></td>
+													<td>中级</td>
+													<td></td>
+													<td>1.被评为2010年度全市文化广电新闻出版工作先进个人2.授予学习型党组织创建活动先进个人</td>
+													<td>是</td>
+													<td>国干</td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>张军凤</td>
+													<td>女</td>
+													<td>汉</td>
+													<td>1982.08.20</td>
+													<td>群众</td>
+													<td></td>
+													<td>朔州师范</td>
+													<td>2002.07</td>
+													<td></td>
+													<td>大专</td>
+													<td></td>
+													<td>科员</td>
+													<td></td>
+													<td></td>
+													<td>是</td>
+													<td>国干</td>
+												</tr>
+												<tr>
+													<td>03</td>
+													<td>兰秀平</td>
+													<td>女</td>
+													<td>汉</td>
+													<td>1967.05.13</td>
+													<td>群众</td>
+													<td></td>
+													<td>山西师范大学</td>
+													<td></td>
+													<td>汉语言</td>
+													<td>本科</td>
+													<td></td>
+													<td>中级</td>
+													<td></td>
+													<td></td>
+													<td>是</td>
+													<td>国干</td>
+												</tr>
+												<tr>
+													<td>04</td>
+													<td>王喜成</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1970.05.17</td>
+													<td>群众</td>
+													<td></td>
+													<td>应县一中</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>是</td>
+													<td>高级工</td>
+												</tr>
+												<tr>
+													<td>05</td>
+													<td>柴青东</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1991.10</td>
+													<td>群众</td>
+													<td></td>
+													<td>江西理工学院</td>
+													<td></td>
+													<td>环艺设计</td>
+													<td>本科</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>公益性岗位</td>
+												</tr>
+												<tr>
+													<td>06</td>
+													<td>周振宇</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1989.9</td>
+													<td>群众</td>
+													<td></td>
+													<td>山西农业大学</td>
+													<td></td>
+													<td>园艺系</td>
+													<td>本科</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>公益性岗位</td>
+												</tr>
+												<tr>
+													<td>07</td>
+													<td>赵秀峰</td>
+													<td>女</td>
+													<td>汉</td>
+													<td>1983.6</td>
+													<td>群众</td>
+													<td></td>
+													<td>朔州农校</td>
+													<td></td>
+													<td>农作物</td>
+													<td>中专</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>公益性岗位</td>
+												</tr>
+												<tr>
+													<td>08</td>
+													<td>曹丽春</td>
+													<td>女</td>
+													<td>汉</td>
+													<td>1976.12.25</td>
+													<td>群众</td>
+													<td></td>
+													<td>山西供销学院</td>
+													<td></td>
+													<td>计算机</td>
+													<td>专科</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>公益性岗位</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">服务工作</a>
+									<div style="overflow: auto;">
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>基础服务项目（项）</th>
+												<th>每周开馆时间（小时）</th>
+												<th>是否错时开放</th>
+												<th>书刊文献年外借册次（万册）</th>
+												<th>年总流通人次（千人次）</th>
+												<th>流动服务点书刊借阅册次（千册次）</th>
+												<th>人均年到馆次数（年流通总人次/持证读者数量）</th>
+												<th>有无障碍设施</th>
+												<th>盲文图书藏量（册）</th>												
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>馆内开馆免费借阅</td>
+													<td>56</td>
+													<td>是</td>
+													<td>3.1</td>
+													<td>300</td>
+													<td></td>
+													<td>4.07</td>
+													<td>无</td>
+													<td>200</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">服务活动</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>活动对象</th>
+												<th>活动名称</th>
+												<th>主要内容</th>
+												<th>活动时间</th>
+												<th>活动地点</th>
+												<th>受益人数</th>
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>残疾人</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>进城务工人员</td>
+													<td>文化惠民 农民工有奖读书活动 </td>
+													<td>服务农民工，提高进城务工人员文化程度</td>
+													<td>2015.08</td>
+													<td>三门城村、王宜庄村、南泉村、郭家寨村、南河种镇</td>
+													<td>100</td>
+												</tr>
+												<tr>
+													<td>03</td>
+													<td>未成年人</td>
+													<td>智力拼图、讲故事、知识竞赛 </td>
+													<td>培养未成年人阅读兴趣，开拓智力</td>
+													<td>2015.12</td>
+													<td>应县图书馆</td>
+													<td>120</td>
+												</tr>
+												<tr>
+													<td>04</td>
+													<td>老年人</td>
+													<td>4.23活动，为老年人免费赠送图书 </td>
+													<td>鼓励老年人走进图书馆</td>
+													<td>2016.04</td>
+													<td>应县图书馆老年阅览室</td>
+													<td>50</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<div class="clearfix"></div>
+								<li>
+									<a href="#">数字化建设</a>
+									<div>
+										<form class="form-horizontal">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">官方网站</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">APP</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">博客</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">微博</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">空间</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">社区</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">微信公众号</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">网上服务项目</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" />
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（项）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">年网站访问量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（万次/年）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">可远程访问的数字资源</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（TB）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">是否建有文化信息资源共享工程站点</label>
+													<div class="col-md-4">
+														<label class="radio-inline"><input type="radio" name="inlineRadioOptions6"  value="1" checked="checked">是</label>
+														<label class="radio-inline"><input type="radio" name="inlineRadioOptions6"  value="2">否</label>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">文化信息资源共享工程经费投入</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（万元/年）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">数字图书馆推广工程经费投入</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（万元/年）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">公共电子阅览室终端是否统一安装管理软件</label>
+													<div class="col-md-4">
+														<label class="radio-inline"><input type="radio" name="inlineRadioOptions7"  value="1" checked="checked">是</label>
+														<label class="radio-inline"><input type="radio" name="inlineRadioOptions7"  value="2">否</label>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">公共电子阅览室终端数量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="20">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（台）</p>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</li>
+								<li>
+									<a href="#">社会教育活动</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>目录</th>
+												<th>活动名称</th>
+												<th>参加人数</th>
+												<th>活动时间</th>
+												<th>活动地点</th>
+												<th>主要内容</th>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="5">01</td>
+													<td rowspan="5">讲座</td>
+													<td>网络书香讲坛</td>
+													<td>200</td>
+													<td>2015.04.12</td>
+													<td>图书馆报告厅</td>
+													<td>数字资源的揭示与获取</td>
+												</tr>
+												<tr>												
+													<td>文明家庭和谐社会</td>
+													<td>200</td>
+													<td>2015.06.23</td>
+													<td>图书馆报告厅</td>
+													<td>讲述了家庭各阶段生活的道德规范</td>
+												</tr>
+												<tr>												
+													<td>关于中小学生的教育问题</td>
+													<td>180</td>
+													<td>2015.9.19</td>
+													<td>图书馆报告厅</td>
+													<td>讲述中、小学生，学习生活中遇到的一系列问题</td>
+												</tr>
+												<tr>												
+													<td>生活与文化</td>
+													<td>200</td>
+													<td>2016.04.24</td>
+													<td>图书馆报告厅</td>
+													<td>生活的内涵、文化的内涵，生活与文化的关系</td>
+												</tr>
+												<tr>												
+													<td>文化的融合与碰撞</td>
+													<td>200</td>
+													<td>2016.05.22</td>
+													<td>图书馆报告厅</td>
+													<td>融合是文化发展的必然趋势、融合中发展的应县文化</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02</td>
+													<td rowspan="4">培训</td>
+													<td>网络培训</td>
+													<td>30</td>
+													<td>2015年（每月一期）</td>
+													<td>应县图书馆电子阅览室</td>
+													<td>进入文化共享工程网学习培训课件</td>
+												</tr>
+												<tr>												
+													<td>全市公共图书馆数字图书馆业务培训</td>
+													<td>5</td>
+													<td>2014.10.15至10.16</td>
+													<td>朔州市图书馆四楼（培训教室）</td>
+													<td>学习图书馆操作系统</td>
+												</tr>
+												<tr>												
+													<td>全省公共图书馆高峰论坛</td>
+													<td>10</td>
+													<td>2014.04.13至04.15</td>
+													<td>朔州市图书馆</td>
+													<td>1.图书馆理事会制度如何推动与实施2.公共图书馆的移动建设与服务</td>
+												</tr>
+												<tr>												
+													<td>朔州市图书馆学会培训</td>
+													<td>15</td>
+													<td>2015.09.07</td>
+													<td>朔州市图书馆</td>
+													<td>图书馆发展趋势与运营畅行</td>
+												</tr>
+												<tr>
+													<td rowspan="4">03</td>
+													<td rowspan="4">展览活动</td>
+													<td>“挥洒自我·书写精神”书法展览</td>
+													<td>80</td>
+													<td>2014.10.01至10.30</td>
+													<td>图书馆报告厅</td>
+													<td>本土书法爱好者，展出自己的作品，供广大市民观摩学习</td>
+												</tr>
+												<tr>
+													<td>“走进展览，文明的历程”国学经典展</td>
+													<td>3000</td>
+													<td>2014.12.01至12.08</td>
+													<td>图书馆一楼、二楼、过道展厅</td>
+													<td>通过展板、喷绘文明发展的历程及国学知识，唤起广大读者对知识的向往，对书籍文化的需求</td>
+												</tr>
+												<tr>
+													<td>“铭记历史·同心圆梦”书画笔会活动</td>
+													<td>100</td>
+													<td>2015.07.10</td>
+													<td>图书馆报告厅</td>
+													<td>邀请大同美术家协会书画家现场用书法、绘画暨“走基层送文化”形式为应县举办的纪念抗战胜利70周年大型笔会助力</td>
+												</tr>
+												<tr>
+													<td>“同心圆梦·共度书香年”楹联文化展</td>
+													<td>5000</td>
+													<td>2016.02.01至02.29</td>
+													<td>图书馆</td>
+													<td>根据国家图书馆学会提供的优质资源，结合我馆的实际情况举行文化楹联展活动</td>
+												</tr>
+												<tr>
+													<td rowspan="5">04</td>
+													<td rowspan="5">阅读推广活动</td>
+													<td>2015年两节群众文化活动</td>
+													<td>30000</td>
+													<td>2015.01.08至02.08</td>
+													<td>图书馆</td>
+													<td>在春节、元宵节开展的一系列读书趣味活动</td>
+												</tr>
+												<tr>
+													<td>2015年全民读书月</td>
+													<td>20000</td>
+													<td>2015.02.08至03.08</td>
+													<td>图书馆各阅览室</td>
+													<td>通过播放展演文化部推荐的100部优秀经典影视作品，评比优秀读者等系列活动，传播先进文化，保障人民群众的基本文化权益</td>
+												</tr>
+												<tr>
+													<td>4.23世界读书日</td>
+													<td>15000</td>
+													<td>2015.04.23至05.22</td>
+													<td>文化活动中心、清宁公园、八中八小、图书馆</td>
+													<td>以“建设书香应县”为主题，开展一系列丰富多彩的读书宣传活动</td>
+												</tr>
+												<tr>
+													<td>5.25服务宣传周</td>
+													<td>10000</td>
+													<td>2015.05.25至05.31</td>
+													<td>八中八小、钗里村、下贾庄村、图书馆报告厅</td>
+													<td>“履行图书馆职能，促进全民阅读，建设书香应县”为主题，精心策划了一系列服务宣传活动</td>
+												</tr>
+												<tr>
+													<td>纪念抗日战争胜利70周年笔会</td>
+													<td>5000</td>
+													<td>2015.07.10</td>
+													<td>图书馆报告厅</td>
+													<td>邀请大同美术家协会书画家现场用书法、绘画暨“走基层送文化”形式为应县举办的纪念抗战胜利70周年大型笔会助力</td>
+												</tr>
+												<tr>
+													<td rowspan="2">05</td>
+													<td rowspan="2">图书馆业务培训</td>
+													<td>服务礼仪培训</td>
+													<td>50</td>
+													<td>2015.03</td>
+													<td>应县图书馆</td>
+													<td>为提高服务读者质量，要求图书馆工作人员在自己的岗位上向读者提供服务时所展示的符合礼节礼貌的标准而正确的做法</td>
+												</tr>
+												<tr>
+													<td>志愿服务培训</td>
+													<td>100</td>
+													<td>2015.06</td>
+													<td>应县图书馆</td>
+													<td>培养志愿者们的服务热情和对志愿工作的态度</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">志愿者队伍建设</a>
+									<div>
+									<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>姓名</th>
+												<th>性别</th>
+												<th>民族</th>
+												<th>出生日期</th>
+												<th>政治面貌</th>
+												<th>毕业院校</th>
+												<th>毕业时间</th>
+												<th>所学专业</th>
+												<th>学历</th>
+												<th>学位</th>
+												<th>加入志愿者日期</th>
+												<th>工作单位</th>
+												<th>教育程度</th>
+												<th>专长</th>
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>王光英</td>
+													<td>女</td>
+													<td>汉</td>
+													<td>1994.05</td>
+													<td>共青团员</td>
+													<td>应县一中</td>
+													<td>2013.07</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>2015.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>李佩</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1994.05</td>
+													<td>共青团员</td>
+													<td>应县一中</td>
+													<td>2013.07</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>2015.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>03</td>
+													<td>张俊文</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1994.05</td>
+													<td>共青团员</td>
+													<td>应县一中</td>
+													<td>2013.07</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>2015.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>04</td>
+													<td>戴伟</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1994.05</td>
+													<td>共青团员</td>
+													<td>应县一中</td>
+													<td>2013.07</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>2015.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>05</td>
+													<td>牛婷婷</td>
+													<td>女</td>
+													<td>汉</td>
+													<td>1994.05</td>
+													<td>共青团员</td>
+													<td>应县一中</td>
+													<td>2013.07</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>2015.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>06</td>
+													<td>郭凯敏</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1989.05</td>
+													<td>共青团员</td>
+													<td>中北大学</td>
+													<td></td>
+													<td>计算机科学与技术</td>
+													<td>本科</td>
+													<td></td>
+													<td>2015.04</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>07</td>
+													<td>杨鹏程</td>
+													<td>女</td>
+													<td>汉</td>
+													<td>1972.08</td>
+													<td>群众</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>高中</td>
+													<td></td>
+													<td>2015.05</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>08</td>
+													<td>张婧芳</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1991.02</td>
+													<td>共青团员</td>
+													<td>中北大学</td>
+													<td></td>
+													<td>生物系</td>
+													<td>大专</td>
+													<td></td>
+													<td>2015.06</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>09</td>
+													<td>李小华</td>
+													<td>女</td>
+													<td>汉</td>
+													<td>1982.10</td>
+													<td>群众</td>
+													<td>山西大同大学</td>
+													<td></td>
+													<td>音乐</td>
+													<td>大专</td>
+													<td></td>
+													<td>2015.04</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>10</td>
+													<td>柴青东</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1991.10</td>
+													<td>群众</td>
+													<td>江西理工学院</td>
+													<td></td>
+													<td>环艺设计</td>
+													<td>本科</td>
+													<td></td>
+													<td>2016.04</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>周振宇</td>
+													<td>男</td>
+													<td>汉</td>
+													<td>1989.09</td>
+													<td>群众</td>
+													<td>山西农业大学</td>
+													<td></td>
+													<td>园艺系</td>
+													<td>本科</td>
+													<td></td>
+													<td>2015.04</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>12</td>
+													<td>赵秀峰</td>
+													<td>女</td>
+													<td>汉</td>
+													<td>1983.06</td>
+													<td>群众</td>
+													<td>朔州农校</td>
+													<td></td>
+													<td>农作物</td>
+													<td>中专</td>
+													<td></td>
+													<td>2015.04</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">志愿服务活动</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>活动名称</th>
+												<th>参加活动志愿者姓名</th>
+												<th>活动时间</th>
+												<th>活动地点</th>
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>2015年暑假义务小馆员实践活动</td>
+													<td>贾建政 孟学帅 张瑞东 董肖瑞   </td>
+													<td>2015年7月至9月</td>
+													<td>应县图书馆各阅览室</td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>2016年寒假志愿者实践活动</td>
+													<td>王光英 李佩   张俊文 戴伟   牛婷婷   </td>
+													<td>2016年1月至2月</td>
+													<td>应县图书馆各阅览室及采编室</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">上级表彰</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>获奖内容</th>
+												<th>表彰单位</th>
+												<th>表彰类别</th>
+												<th>表彰时间</th>
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>山西省“全民阅读先进集体”</td>
+													<td>山西省图书馆学会</td>
+													<td>省级</td>
+													<td>2015年10月</td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>朔州市“五城联创”市民素质提升教育基地</td>
+													<td>朔州市“五城联创”指挥部</td>
+													<td>市级</td>
+													<td>2015年6月</td>
+												</tr>
+												<tr>
+													<td>03</td>
+													<td>朔州市文明单位</td>
+													<td>朔州市文明办</td>
+													<td>市级</td>
+													<td>2015年6月</td>
+												</tr>
+												<tr>
+													<td>04</td>
+													<td>经济突出贡献单位</td>
+													<td>应县县委县政府</td>
+													<td>县级</td>
+													<td>2015年1月</td>
+												</tr>
+												<tr>
+													<td>05</td>
+													<td>“同筑中国梦 共度书香年”活动优秀组织奖 </td>
+													<td>山西省图书馆学会</td>
+													<td>省级</td>
+													<td>2015年4月</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">古籍保护管理</a>
+									<div>
+										<form class="form-horizontal">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">古籍数量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" value="466">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">经费投入</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">古籍保护宣传活动次数</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</div>
+    		<div style="text-align: center;"><button class="btn btn-primary btnSubmit" data-toggle="modal" data-target="#myModal" style="width: 100px;">审核</button></div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">审核</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+        	<div class="form-group">
+        		<label class="control-label col-md-3">审核是否通过</label>
+        		<div class="col-md-6">
+        			<select class="form-control">
+        				<option>通过</option>
+        				<option>不通过</option>
+        			</select>
+        		</div>
+        	</div>
+        	<div class="form-group">
+        		<label class="control-label col-md-3">理由</label>
+        		<div class="col-md-6">
+        			<textarea class="form-control"></textarea>
+        		</div>
+        	</div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+    	</div>
+    </div>
+</div>
+<div class="push">
+     </div>
+</div>
+<div class="clr"></div>
+<div class="footer" style="background:#E5E5E5;width:100%;color:#434343;height:40px;line-height:40px;font-size: 14px;">
+	技术支持：山西晋能信工
+</div>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/dsjkHt.js" ></script>
+<script type="text/javascript" src="js/metismenu.js"></script>
+	<script type="text/javascript" src="dist/js/pignose.tab.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
+		<script>
+			$(function() {
+
+				$('#menu3').metisMenu({
+					doubleTapToGo: true
+				});
+				$('.tab').pignoseTab({
+					animation: false,
+					children: '.tab'
+				});
+			});
+		</script>
+</body>
+</html>

@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文化大数据库</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" />
+<link rel="stylesheet" href="dist/css/pignose.tab.min.css" />
+<link href="css/dsjk.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/htFooter.css" />
+<link rel="stylesheet" href="css/table.css" />
+<link rel="stylesheet" href="css/metismenu.min.css" />
+
+<style>
+.tab ul li {
+				width: 16.66%;
+			}
+			
+			.pignose-tab-wrapper .pignose-tab-btn {
+				border-right-width: 1px;
+				border-left-width: 0px;
+			}
+			
+			.pignose-tab-wrapper .pignose-tab-group {
+				border-left: 1px solid #dfdfdf;
+				width: 99.96%;
+			}
+			
+			.pignose-tab-wrapper .pignose-tab-container {
+				top: 88px;
+			}
+			
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="top" style="background:none;height:100px;background-color: #0F4F7D;width: 100%;margin: auto;">
+<div style="font-size: 40px;color:white;height: 100px;line-height: 100px;padding-left: 50px;" class="pull-left">
+	文化大数据库管理系统
+</div>
+<div class="pull-right" style="color: white;padding-top: 60px;padding-right: 20px;">
+	<i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;您好，<span class="userName" style="color:#E46B20">Adimin</span> 所在地区：太原市-迎泽区 <a class="outHt" href="dsjk-index.html">[退出]</a>
+</div>
+</div>
+<div class="all" style="width: 100%;">
+	<div class="left-c" style="background: none;background-color:#0F4F7D;margin-top:0px;width:15%">
+		<img style="width:100%" src="images/sjk/dsjkHt-menu.png" />
+	<aside class="sidebar">
+						<nav class="sidebar-nav">
+							<ul id="menu3">
+								<li class="active choose">
+									<a href="dsjkht-index.html" class="sidebarT">待办事项<span class="glyphicon arrow"></span></a>
+								</li>
+								<li>
+									<a href="#" class="sidebarT">资源采集<span class="glyphicon arrow"></span></a>
+									<ul>
+										<li class="subLi test001"><a href="dsjkht-zycjWhysList.html">文化艺术</a></li>
+										<li class="subLi test002 test003"><a href="#">公共文化<span class="glyphicon arrow"></span></a>
+											<ul>
+												<li class="subLi test002"><a href="dsjkht-zycjTsgList.html">图书馆</a></li>
+												<li class="subLi test003"><a href="dsjkht-zycjQygList.html">群艺馆</a></li>
+											</ul>
+										</li>
+										<li class="subLi test004"><a href="#">非物质文化遗产</a></li>
+										<li class="subLi test005"><a href="#">文化产业</a></li>
+										<li class="subLi test006"><a href="#">文化政策</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="sidebarT">资源检索<span class="glyphicon arrow"></span></a>
+									<ul>
+										<li class="subLi test001"><a href="dsjkht-zyjs.html">文化艺术</a></li>
+										<li class="subLi test002 test003"><a href="#">公共文化<span class="glyphicon arrow"></span></a>
+											<ul>
+												<li class="subLi test002"><a href="dsjkht-zyjsTsg.html">图书馆</a></li>
+												<li class="subLi test003"><a href="dsjkht-zyjsQyg.html">群艺馆</a></li>
+											</ul>
+										</li>
+										<li class="subLi test004"><a href="#">非物质文化遗产</a></li>
+										<li class="subLi test005"><a href="#">文化产业</a></li>
+										<li class="subLi test006"><a href="#">文化政策</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="dsjkht-zytj.html" class="sidebarT">资源统计<span class="glyphicon arrow"></span></a>
+								</li>
+								<li>
+									<a href="#" class="sidebarT">资源分析<span class="glyphicon arrow"></span></a>
+									<ul>
+										<li><a href="dsjkht-zyfx.html">点击量</a></li>
+										<li><a href="dsjkht-zyfx2.html">下载量</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+	</div>
+  <div class="right-c" style="width:85%;margin-top: 0px;">
+    	<!--<img  src="images/sjk/htRight1.png" style="width:100%"/>-->
+    	<div class="right-T">
+						<div class="sjkNav"><span class="sjkNavA">我的待办</span><span class="sjkNavA active">审核<a class="sjkNavClose" href="dsjkht-index.html">x</a></span></div>
+					</div>
+    	<div style="padding: 15px;">
+    		<div class="tab">
+							<ul>
+								<li>
+									<a href="#">群艺馆基本概况</a>
+									<div>
+										<form class="form-horizontal">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm1" class="control-label col-md-3">名称</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm1">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm2" class="control-label col-md-3">地址</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm2">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm3" class="control-label col-md-3">法人代表</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm3">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm7" class="control-label col-md-3">联系电话</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm7">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm4" class="control-label col-md-3">馆舍建筑面积</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm4">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm5" class="control-label col-md-3">室外活动场地使用面积</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm5">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm6" class="control-label col-md-3">群众文化活动房使用面积</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm6">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm8" class="control-label col-md-3">宣传橱窗、栏长度</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm8">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm9" class="control-label col-md-3">电子阅览室面积</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm9">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm10" class="control-label col-md-3">电子阅览室座席数</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm10">
+													</div>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">服务区是否提供无线网络覆盖</label>
+													<div class="col-md-4">
+														<label class="radio-inline"><input type="radio" name="inlineRadioOptions"  value="1">是</label>
+														<label class="radio-inline"><input type="radio" name="inlineRadioOptions"  value="2">否</label>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="TsgForm18" class="control-label col-md-3">宽带接入</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text" id="TsgForm18">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（Mbps）</p>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</li>
+
+								<li>
+									<a href="#">经费投入情况</a>
+									<div>
+										<table class="table">
+											<thead>
+												<th>序号</th>
+												<th>政府拨款总额（万元）</th>
+												<th>财政拨款是否列入预算（万元）</th>
+												<th>免费开放经费补助金额（万元）</th>
+												<th>专项业务活动经费</th>
+											</thead>
+											<tbody>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">群艺馆人才队伍建设情况</a>
+									<div>
+										<table class="table table-bordered table1">
+											<thead>
+												<th>序号</th>
+												<th>姓名</th>
+												<th>性别</th>
+												<th>民族</th>
+												<th>出生日期</th>
+												<th>政治面貌</th>
+												<th>入党时间</th>
+												<th>毕业院校</th>
+												<th>毕业时间</th>
+												<th>所学专业</th>
+												<th>学历</th>
+												<th>获奖情况</th>
+												<th>是否业务人员</th>
+												<th>职称</th>
+												<th>岗位培训学时</th>
+											</thead>
+											<tbody>
+												
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">服务工作</a>
+									<div>
+										<form class="form-horizontal">
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">每周对外开放时间</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（小时）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">是否错时开放</label>
+													<div class="col-md-4">
+														<label class="radio-inline"><input type="radio" name="inlineRadioOptions5"  value="1">是</label>
+														<label class="radio-inline"><input type="radio" name="inlineRadioOptions5"  value="2">否</label>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">不定期特色文化服务项目</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（项）</p>
+													</div>
+
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">常设免费服务项目</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（项）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">年外出服务人次</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">人均年到馆次数</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">无障碍设施</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+
+										</form>
+									</div>
+								</li>
+								<li>
+									<a href="#">服务活动</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>活动对象</th>
+												<th>活动名称</th>
+												<th>主要内容</th>
+												<th>活动时间</th>
+												<th>活动地点</th>
+												<th>受益人数</th>
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>残疾人</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>进城务工人员</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>03</td>
+													<td>未成年人</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>04</td>
+													<td>老年人</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+
+								<li>
+									<a href="#">数字化建设</a>
+									<div>
+										<form class="form-horizontal">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">官方网站</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">微信公众号</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">网上服务项目</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（项）</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">年网站访问量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">特色文化数字资源</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label col-md-3">公共电子阅览室终端数量</label>
+													<div class="col-md-4">
+														<input class="form-control" type="text">
+													</div>
+													<div class="col-md-2" style="padding-left: 0px;">
+														<p class="form-control-static">（项）</p>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</li>
+								<div class="clearfix"></div>
+								<li>
+									<a href="#">馆办活动</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>目录</th>
+												<th>活动名称</th>
+												<th>参加人数</th>
+												<th>活动时间</th>
+												<th>活动地点</th>
+												<th>主要内容</th>
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>文化演出活动</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>文化展览活动</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>03</td>
+													<td>文化赛事活动</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>04</td>
+													<td>理论研讨活动</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>05</td>
+													<td>对外交流活动</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>06</td>
+													<td>馆办文艺团队演出</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">志愿者队伍建设</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>姓名</th>
+												<th>性别</th>
+												<th>民族</th>
+												<th>出生日期</th>
+												<th>政治面貌</th>
+												<th>毕业院校</th>
+												<th>工作单位</th>
+												<th>教育程度</th>
+												<th>专长</th>
+											</thead>
+											<tbody>
+												
+											</tbody>
+										</table>
+										
+									</div>
+								</li>
+								<li>
+									<a href="#">志愿服务活动</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>活动名称</th>
+												<th>参加活动志愿者姓名</th>
+												<th>活动时间</th>
+												<th>活动地点</th>
+												<th>参加活动人数</th>
+												<th>活动受益人数</th>
+											</thead>
+											<tbody>
+												
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">基层文化辅导培训基地</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>地点</th>
+												<th>基地面积</th>
+												<th>可容纳培训人数</th>
+												<th>年举办培训次数</th>
+											</thead>
+											<tbody>
+												
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">辅导培训活动</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>目录</th>
+												<th>培训名称</th>
+												<th>主要内容</th>
+												<th>培训时间</th>
+												<th>活动地点</th>
+												<th>受益人数</th>
+												<th>活动开展频率</th>
+											</thead>
+											<tbody></tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									<a href="#">群众文艺辅导资料</a>
+									<div>
+										<table class="table table-bordered">
+											<thead>
+												<th>序号</th>
+												<th>刊物名称</th>
+												<th>年发行量</th>
+												<th>发行范围</th>
+												
+											</thead>
+											<tbody></tbody>
+										</table>
+									</div>
+								</li>
+							</ul>
+						</div>
+    		<div style="text-align: center;"><button class="btn btn-primary btnSubmit" data-toggle="modal" data-target="#myModal" style="width: 100px;">审核</button></div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">审核</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+        	<div class="form-group">
+        		<label class="control-label col-md-3">审核是否通过</label>
+        		<div class="col-md-6">
+        			<select class="form-control">
+        				<option>通过</option>
+        				<option>不通过</option>
+        			</select>
+        		</div>
+        	</div>
+        	<div class="form-group">
+        		<label class="control-label col-md-3">理由</label>
+        		<div class="col-md-6">
+        			<textarea class="form-control"></textarea>
+        		</div>
+        	</div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+    	</div>
+    </div>
+</div>
+<div class="push">
+     </div>
+</div>
+<div class="clr"></div>
+<div class="footer" style="background:#E5E5E5;width:100%;color:#434343;height:40px;line-height:40px;font-size: 14px;">
+	技术支持：山西晋能信工
+</div>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/dsjkHt.js" ></script>
+<script type="text/javascript" src="js/metismenu.js"></script>
+	<script type="text/javascript" src="dist/js/pignose.tab.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
+		<script>
+			$(function() {
+
+				$('#menu3').metisMenu({
+					doubleTapToGo: true
+				});
+				$('.tab').pignoseTab({
+					animation: false,
+					children: '.tab'
+				});
+			});
+		</script>
+</body>
+</html>

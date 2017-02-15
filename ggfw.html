@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>公共文化服务平台</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$("dl").hide();
+
+				$("li.mainmenu").hover(function() {
+					$(this).find("dl").stop(true, true);
+					$(this).find("dl").slideDown();
+				}, function() {
+					$(this).find("dl").stop(true, true);
+					$(this).find("dl").slideUp();
+				});
+
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="top">
+					<div class="logo"><img src="images/logo.png" width="256" height="84" usemap="#Map" border="0" />
+						<map name="Map" id="Map">
+    <area shape="rect" coords="4,4,251,73" href="index.html" />
+  </map>
+					</div>
+					<div class="sss">
+						<input type="text" value="" size="" /><span><a href="#">搜索</a></span>
+						<div class="ss1"><span class="line2"><a href="#">文化艺术</a> </span> | <span class="line2"><a href="#">公共文化</a> </span> | <span class="line2"><a href="#">非物质文化遗产</a> </span> | <span class="line2"><a href="#">文化产业</a> </span></div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="clr"></div>
+			<div class="nav2">
+
+				<ul>
+					<li><a class="link" href="ggfw.html">首页</a></li>
+					<li class="mainmenu">
+						<a class="link" href="#">新闻中心</a>
+						<dl>
+							<dd><a href="#">最新新闻</a></dd>
+							<dd><a href="#">行业资讯</a></dd>
+							<dd><a href="#">政策法规</a></dd>
+
+						</dl>
+					</li>
+					<li class="mainmenu">
+						<a class="link" href="ggfw-whhd.html">文化活动</a>
+						<dl>
+							<dd><a href="ggfw-whhd-pxbm.html">培训讲座</a></dd>
+							<dd><a href="ggfw-whhd-ZlList.html">展览</a></dd>
+							<dd><a href="ggfw-whhd-QwssList.html">群文赛事</a></dd>
+
+						</dl>
+					</li>
+					<li class="mainmenu">
+						<a class="link" href="whzy.html">文化资源展馆</a>
+						<dl>
+							<dd><a href="whzy.html">文化艺术</a></dd>
+							<dd><a href="whzy.html">公共文化</a></dd>
+							<dd><a href="whzy.html">非物质文化遗产</a></dd>
+							<dd><a href="whzy.html">文化产业</a></dd>
+
+						</dl>
+					</li>
+					<li class="mainmenu">
+						<a class="link" href="whss-list1.html">文化设施</a>
+						<dl>
+							<dd><a href="ggfw-cgyd.html">场馆预订</a></dd>
+							
+							<dd><a href="ggfw-gztj.html">优秀馆站推荐</a></dd>
+
+						</dl>
+					</li>
+
+					<li class="mainmenu">
+						<a class="link" href="wswbh.html">网上文博会</a>
+
+					</li>
+					<li class="mainmenu">
+						<a class="link" href="#">文化地标</a>
+						<dl>
+							<dd><a href="whdb-whbs.html">文化保税区</a></dd>
+							<dd><a href="whdb-whcy.html">文化产业园</a></dd>
+							<dd><a href="mmwh.html">孟母文化健康城</a></dd>
+						</dl>
+					</li>
+					<li class="mainmenu">
+						<a class="link" href="ggfw-zyz.html">文化志愿者</a>
+					</li>
+				</ul>
+			</div>
+			<div class="clr"></div>
+			<!--轮播图 开始 -->
+			<div class="main_banner">
+
+				<div class="main_banner_wrap">
+					<canvas id="myCanvas" width="150" height="150"></canvas>
+					<div class="main_banner_box" id="m_box">
+						<a href="javascript:void(0)" class="banner_btn js_pre">
+							<span class="banner_btn_arrow"><i></i></span>
+						</a>
+						<a href="javascript:void(0)" class="banner_btn btn_next js_next">
+							<span class="banner_btn_arrow"><i></i></span>
+						</a>
+						<ul>
+							<li id="imgCard0">
+								<a href="gp.html"><span style="opacity:0;"></span></a>
+								<img src="main_banner/8.jpg">
+								<p style="bottom:0">晋剧《蝴蝶杯》</p>
+							</li>
+							<li id="imgCard1">
+								<a href=""><span style="opacity:0.4;"></span></a>
+								<img src="main_banner/2.jpg" alt="">
+								<p style="bottom:0">蒲剧</p>
+							</li>
+							<li id="imgCard2">
+								<a href=""><span style="opacity:0.4;" ></span></a>
+								<img src="main_banner/3.jpg" alt="">
+								<p style="bottom:0">马克西姆钢琴音乐会</p>
+							</li>
+							<li id="imgCard3">
+								<a href=""><span style="opacity:0.4;"></span></a>
+								<img src="main_banner/4.jpg" alt="">
+								<p style="bottom:0">小蝌蚪历险记</p>
+							</li>
+							<li id="imgCard4">
+								<a href=""><span style="opacity:0.4;"></span></a>
+								<img src="main_banner/5.jpg" alt="">
+								<p></p>
+							</li>
+						</ul>
+						<!--火狐倒影图层-->
+						<p id="rflt"></p>
+						<!--火狐倒影图层-->
+					</div>
+					<!--序列号按钮-->
+					<div class="btn_list">
+						<span class="curr"></span><span></span><span></span><span></span><span></span>
+					</div>
+				</div>
+
+			</div>
+			<!--轮播图 结束 -->
+			<div class="clr"></div>
+
+			<div class="main">
+				<div class="tag">最新推荐 / Latest Recommended</div>
+				<div class="main-one">
+					<div class="main-one-img">
+						<ul>
+							<li>
+								<a href="xq.html"><img src="images/t1.png" width="140" height="140" usemap="#Map2" border="0" /></a>
+
+							</li>
+							<li>
+								<a href="#"><img src="images/t2.png" width="140" height="140" usemap="#Map3" border="0" /></a>
+
+							</li>
+							<li>
+								<a href="#"><img src="images/t3.png" width="140" height="140" usemap="#Map4" border="0" /></a>
+
+							</li>
+							<li>
+								<a href="#"><img src="images/t4.png" width="140" height="140" usemap="#Map5" border="0" /></a>
+
+							</li>
+							<li>
+								<a href="#"><img src="images/t5.png" width="140" height="140" usemap="#Map6" border="0" /></a>
+
+							</li>
+							<li>
+								<a href="#"><img src="images/t6.png" width="140" height="140" usemap="#Map7" border="0" /></a>
+
+							</li>
+							<li>
+								<a href="#"><img src="images/t7.png" width="140" height="140" usemap="#Map8" border="0" /></a>
+
+							</li>
+							<li>
+								<a href="#"><img src="images/t8.png" width="140" height="140" usemap="#Map9" border="0" /></a>
+
+							</li>
+						</ul>
+					</div>
+					<div class="main-one-fn">
+						<ul>
+							<li><span class="line3"><a href="xq.html">戏曲</a></span></li>
+							<li><span class="line3"><a href="#">舞蹈</a></span></li>
+							<li><span class="line3"><a href="#">电影</a></span></li>
+							<li><span class="line3"><a href="#">音乐</a></span></li>
+							<li><span class="line3"><a href="#">鉴赏</a></span></li>
+							<li><span class="line3"><a href="#">图书</a></span></li>
+							<li><span class="line3"><a href="#">美术</a></span></li>
+							<li><span class="line3"><a href="#">其他</a></span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="tag">活动预告 / Upcoming Events</div>
+				<div class="main-two">
+					<DIV class="list">
+						<ul>
+							<li>
+								<a href="hdyg.html">
+									<IMG src="images/i1.png">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<IMG src="images/i2.png">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<IMG src="images/i3.png">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<IMG src="images/i4.png">
+								</a>
+							</li>
+						</ul>
+					</DIV>
+					<DIV class="list1">
+						<ul>
+							<li>
+								<p>荷兰“魔力美声”女子合唱团中国巡演 </p><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;展演地点：山西大剧院音乐厅</a><br /><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;展演时间：2016-3-15<br /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="hdyg.html">·查看详情</a></li>
+							<li>
+								<p>内蒙古塔尔TAR乐团中国巡演</p><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;展演地点：山西大剧院音乐厅</a><br /><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;展演时间：2016-4-8<br /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">·查看详情</a></li>
+							<li>
+								<p>话剧《甄嬛传》</p><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;展演地点：太原青年宫演艺中心</a><br /><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;展演时间：2016-5-12<br /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">·查看详情</a></li>
+							<li>
+								<p>舞蹈剧场《遇见大运河》</p><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;展演地点：山西大剧院音乐厅</a><br /><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;展演时间：2016-6-16<br /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">·查看详情</a></li>
+						</ul>
+					</DIV>
+				</div>
+				<div class="clr"></div>
+				<a href="ggfw-xmgs.html" class="Ad"><img src="images/Ad1.jpg"></a>
+				<div class="tag"><a href="whss-list1.html" style="color:#CE0707">文化设施 / Cultural Facilities</a></div>
+				<div class="main-two">
+					<DIV class="list">
+						<ul>
+							<li>
+								<a href="tsg-list.html">
+									<IMG src="images/b1.png">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<IMG src="images/b2.png">
+								</a>
+							</li>
+							<li>
+								<a href="whss-list2.html">
+									<IMG src="images/b3.png">
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<IMG src="images/b4.png">
+								</a>
+							</li>
+						</ul>
+					</DIV>
+					<DIV class="list1 sh">
+						<ul>
+							<li><a href="tsg-list.html">数字图书馆</a></li>
+							<li><a href="#">剧院</a></li>
+							<li><a href="whss-list2.html">数字博物馆</a></li>
+
+							<li><a href="#">数字美术馆</a></li>
+						</ul>
+					</DIV>
+				</div>
+				<div class="clr"></div>
+				<div class="main-three">
+					<DIV class="list">
+						<ul>
+							<li>
+								<a href="#">
+									<IMG src="images/b5.png">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<IMG src="images/b6.png">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<IMG src="images/b7.png">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<IMG src="images/b8.png">
+								</a>
+							</li>
+						</ul>
+					</DIV>
+					<DIV class="list1 sh">
+						<ul>
+							<li><a href="#">数字展览馆</a></li>
+							<li><a href="#">数字纪念馆</a></li>
+							<li><a href="#">数字文化古迹展</a></li>
+							<li><a href="#">数字科技馆</a></li>
+						</ul>
+					</DIV>
+				</div>
+				<div class="clr"></div>
+				<div class="main-four">
+					<DIV class="list2">
+						<div class="lisrleft1">
+							<div class="news">最新新闻 | Latest News</div>
+							<div class="newsbg"></div>
+							<div class="nav">
+								<ul>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;京剧《陈廷敬》在京精彩亮相</a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;《党的女儿》唱响“大好河山”</a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;北路梆子《云水松柏续范亭》亮相京城</a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;省晋剧院南京参演“南腔北调”传统戏</a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;长治市“戏曲精品老区行”慰问演出活</a></span></li>
+								</ul>
+							</div>
+							<div class="nav1"><span class="line1"><a href="#">>查看更多</a></span></div>
+						</div>
+						<div class="lisrleft2">
+							<div class="news">文化资讯 | Cultural Information</div>
+							<div class="newsbg"></div>
+							<div class="nav">
+								<ul>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;发现山西·三晋文脉主题书法展 </a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;晋城8台自助图书馆亮相凤台街</a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;太谷县着力构建公共文化服务体系</a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;“晋韵流风书法十人展”在山西省图书馆</a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;文化部第八评估组对全省文化馆开展评估</a></span></li>
+								</ul>
+							</div>
+							<div class="nav1"><span class="line1"><a href="#">>查看更多</a></span></div>
+						</div>
+
+						<div class="lisrleft3">
+							<div class="news">政策法规 | Policies and Regulations</div>
+							<div class="newsbg"></div>
+							<div class="nav">
+								<ul>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;文化部关于进一步加强和改进歌舞娱乐场 </a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;文化部关于制止在公众聚集场所进行裸体</a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;文化部办公厅关于非法经营行为界定问题</a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;文化部办公厅关于文化部实施的行政许可</a></span></li>
+									<li><span class="line1"><a href="#"><strong>·</strong>&nbsp;美术品经营管理办法</a></span></li>
+								</ul>
+							</div>
+							<div class="nav1"><span class="line1"><a href="#">>查看更多</a></span></div>
+						</div>
+
+					</DIV>
+				</div>
+
+				<div class="foot">© 2005－2015 Shanxi Yunpingtai.com, All Rights Reserved | <a href="#">关于我们</a> | <a href="#">网站邮箱</a> | <a href="#">网站地图</a> | <a href="#">友情链接</a> | <a href="#">本网声明</a> | </div>
+			</div>
+
+		</div>
+
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+
+</html>
